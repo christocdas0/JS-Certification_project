@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS_Certification_Exam_Project</title>
+    <!-- css -->
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <!-- slider link -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+  </head>
+  <body>
+    <!-- nav -->
+    <nav>
+      <!-- logo -->
+      <div class="nav_logo">
+        <a href="index.html">
+          <img
+            class="ipl_logo"
+            src="https://www.news247plus.com/contents_img/N247P-news-image-6291405812-23776-1597979555.jpg"
+            alt=""
+          />
+        </a>
+      </div>
+      <!-- nav Contents -->
+      <div class="nav_contents">
+        <!-- home and teams -->
+        <div class="home_teams">
+          <a href="index.html">Home</a>
+          <a href="#our_teams_section">Teams</a>
+        </div>
+        <div class="nav-create-btns">
+          <button id="crete_team_btn" class="btn">Create Team</button>
+          <button id="create_player_btn" class="btn">Create Player</button>
+        </div>
+        <div class="search_area">
+          <input id="player_secrh_nav" type="text" placeholder="Search Your Team" />
+          <button id="refresh">
+    <i  class="fa fa-refresh"></i>
+          </button>
+      
+          <button id="pleyer_Search_btn" class="btn">Search</button>
+        </div>
+      </div>
+      <!-- nav bar hamburger -->
+    </nav>
+    <!-- nav -->
+
+    <!-- main slider -->
+
+    <section class="main_slider">
+      <div class="scrollsection">
+        <img
+          class="imgscroll"
+          src="https://i.ytimg.com/vi/gs6-Be0H6JI/maxresdefault.jpg"
+        />
+        <img
+          class="imgscroll"
+          src="https://i.ytimg.com/vi/F-oi0IXPtpk/maxresdefault.jpg"
+        />
+        <img
+          class="imgscroll"
+          src="https://i.ytimg.com/vi/Yht3La_B25Y/maxresdefault.jpg"
+        />
+        <img
+          class="imgscroll"
+          src="https://i.ytimg.com/vi/dkT1vvkqIzU/maxresdefault.jpg"
+        />
+      </div>
+    </section>
+    <!-- main slider end -->
+
+    <!-- our teams cards -->
+    <section id="our_teams_section">
+      <div class="header">
+        <h2>Our Teams</h2>
+      </div>
+      <div class="cards">
+      </div>
+    </section>
+    <!-- our teams cards end -->
+    <!-- team details page -->
+
+
+    <section id="team_details_page">
+      <div class="team_details_page none">
+        <!-- logo And team details -->
+        <div class="left">
+
+        <h1 id="__team_heading">CSK</h1>
+
+          <div class="img">
+
+            <img id="team_details_left_img" src="https://wallpaperaccess.com/full/1898247.jpg" alt="" />
+          </div>
+          <div class="detail">
+            <p>Team Name 	&#10132; <span id="__teamName"></span></p>
+            <p>Player Count &#10132; <span id="__player_Count"> </span> </p>
+            <p>Top Batsman &#10132;  <span id="__batsMan_name" ></span></span> </p>
+            <p>Top Bowler &#10132; <span id="__bowler_Name"></span> </p>
+            <p>Championship Won Count &#10132;  <span id="__winning_Count"></span></p>
+          </div> 
+        </div>
+
+        <!-- Team players -->
+        <div class="right">
+          <h2>Our Players</h2>
+          <div class="players_grid">
+    
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- team details page end -->
+
+    <!-- player details -->
+        <section id="payer_details_section_Contanier" class="none">
+        <!-- <div class="payer_details_section_Contanier ">
+
+     <div class="left">
+         <div class="img">
+             <img src="https://www.pinkvilla.com/imageresize/kiccha_sudeep_releases_dhonis_cdp.jpeg?width=752&format=webp&t=pvorg" alt="">
+         </div>
+         <div class="name">
+             <h3>M S Dohni</h3>
+         </div>
+     </div>
+
+     <div class="right">
+         <p>Payer Name : MS Dhoni</p>
+         <p>Payer Team : CSk</p>
+         <p>Payer Price : 45.00 cr</p>
+         <p> PLaying Satus :  yes</p>
+         <p>  Role : batter/keeper</p>
+<a href="index.html">
+      <button> back to Home </button>
+</a>
+     </div>
+
+        </div> -->
+    </section>
+    <!-- player details -->
+
+<!-- serach Players Details -->
+<section id="search_player_details">
+<div class="searching_players">
+    <!-- <div class="players">
+        <div class="img">
+            <img src="https://i.pinimg.com/originals/93/b2/91/93b2912b59a6d00d161e3bac1f1400eb.jpg" alt="">
+        </div>
+        <div class="details">
+            <h3>Ms Dhoni</h3>
+            <p>CSK</p>
+        </div>
+    </div> -->
+</div>
+
+</section>
+<!-- serach Players Details -->
+
+
+
+    <!-- forms -->
+    <form id="team_crete_form" class="team_crete_form">
+      <input id="team_name" type="text" placeholder="Enter Team Name" />
+      <input id="team_icon" type="text" placeholder="Enter Team Icon" />
+      <input
+        id="team_Player_Count"
+        type="text"
+        placeholder="Enter Player Count"
+      />
+      <input
+        id="team_Top_batsman"
+        type="text"
+        placeholder="Enter Team Top Batsman"
+      />
+      <input
+        id="team_Top_Bowler"
+        type="text"
+        placeholder="Enter Team Top Bowler"
+      />
+      <input
+        id="team_Champoins_cup"
+        type="text"
+        placeholder="Enter ChampionsCup"
+      />
+      <button id="team_create_submit_btn" class="btn">Submit</button>
+      <i id="team_create_form_closing_btn" class="fa fa-close"></i>
+    </form>
+
+    <form id="player_crete_form" class="player_crete_form">
+      <input id="playerName" type="text" placeholder="Enter Player Name" />
+      <input
+        id="playerPhoto"
+        type="text"
+        placeholder="Enter Player Photo link"
+      />
+      <input id="playerTeam" type="text" placeholder="Enter Player Team" />
+      <input id="playerPrice" type="text" placeholder="Enter Player Price" />
+      <input id="playerRole" type="text" placeholder="Enter Player Role" />
+      <input
+        id="playerOnPlay"
+        type="text"
+        placeholder="He Is Playing Or Not "
+      />
+      <button id="player_creating_submit_btn" class="btn">Submit</button>
+      <i id="player_create_form_closing_btn" class="fa fa-close"></i>
+    </form>
+    <!-- forms end -->
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="app.js"></script>
+
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+  </body>
+</html>
